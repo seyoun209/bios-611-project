@@ -1,14 +1,14 @@
 # bios611-project
 This is 2022-BIOS611 course project repository. 
 
-###Proposal
+### Proposal
 
-###Dataset
+### Dataset
 
-###Results
+### Results
 
-###Conclusions
+### Conclusions
 
-###Usage
+### Usage
 
-###Shiny
+### Shiny
