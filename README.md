@@ -1,26 +1,118 @@
+---
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
 # bios611-project
-This is 2022-BIOS611 course project repository. 
 
-### Coffe and Coding 
-Having a cup of coffee is something I enjoy every day, and I believe it is typical for an average graduate student and almost a life source. Coffee helps wake up in the morning and can be used as a pill for concentration or getting some coffee while you are spending time with people during break hours or leisure. What about people who do coding? Many graduate students drink coffee while coding because coffee contains caffeine and keeps your brain from getting tiresome. Here, the coffee and code dataset from Kaggle has nine columns, including coding hours, coffee cups per day, coffee time, coding without coffee, coffee type, solve bugs, country, age range, and gender. 
+This is 2022-BIOS611 course project repository.
+
+### Coffee and Coding
+
+Having a cup of coffee is something I enjoy every day, and I believe it is typical for an average graduate student and almost a life source.
+Coffee helps wake you up in the morning and can be used as a pill for concentration or to get some coffee while you are spending time with people during break hours or leisure.
+What about people who do coding?
+Many graduate students drink coffee while coding because coffee contains caffeine and keeps your brain from getting tiresome.
+Here, the coffee and code dataset from Kaggle has nine columns, including coding hours, coffee cups per day, coffee time, coding without coffee, coffee type, solving bugs, country, age range, and gender.
 <br />
 
-### Dataset
-I found the dataset from Kaggle, and it is the "caffeine content of drinks" and "Coffee and code dataset"
-<br /> 
+### Datasets
 
-### Results
-To be continue...
-<br />
+I found the datasets from Kaggle, and it is the "caffeine content of drinks" and "Coffee and code dataset"
 
-### Conclusions
-To be continue...
-<br />
+1.  The caffeine content of Drinks (<https://www.kaggle.com/datasets/heitornunes/caffeine-content-of-drinks>)
+
+    -   Drink: Drink's name
+
+    -   Volume(mL): Volume quantity
+
+    -   Calories
+
+    -   Caffeine (mg)
+
+    -   Type
+
+2.  Coffee and code Dataset (<https://www.kaggle.com/datasets/shrutikunapuli/coffee-and-code-dataset>)
+
+    -   Coding Hours
+
+    -   Coffee cups per day
+
+    -   Coffee Time
+
+    -   Coding without coffee
+
+    -   Coffee Type
+
+    -   Coffee solves Bugs
+
+    -   Gender
+
+    -   Country
+
+    -   Age range
+
+![](caffein_image.jpg){width="278"}
+
+![](code.png){width="280"}
+
+### Preliminary Figures
+
+To be continue... <br />
 
 ### Usage
-To be continue...
-<br />
 
-### Shiny
-To be continue...
-<br />
+You will need Docker and the ability to run Docker as your current user.
+
+To build the container:
+
+```{bash}
+
+ docker build .t project-env
+```
+
+To run the Rstudio server in the container:
+
+```{bash}
+docker run -v 'pwd':/home/rstudio -p 8787:8787 -e PASSWORD=mypassword -t project-env
+
+```
+
+Then connect to the machine on port 8787
+
+### Makefile
+
+The Makefile included in this repository will build the major components of the project.
+For example, to build the report associated with this repository, in the Terminal of the Docker Rstudio instance enter:
+
+```{r}
+make report.pdf
+
+```
+
+To make every element in the repository, run:
+
+```{r}
+make all
+
+```
+
+### R Shiny App
+
+To interactively look at the distribution of coffee vs coding in each category, use the R shiny App as follows:
+
+```{bash}
+docker run -v 'pwd':/home/rstudio -p 8080:8080 -p 8787:8787 \
+  -e PASSWORD=mypassword -t project-env
+
+```
+
+Then within Rsutdio, launch from the Terminal:
+
+```{bash}
+PORT=8080 make shiny_app
+
+```
+
+The app is then available on your browser at port 8080
