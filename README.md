@@ -1,65 +1,44 @@
----
-editor_options: 
-  markdown: 
-    wrap: sentence
----
-
 # bios611-project
 
 This is 2022-BIOS611 course project repository.
 
 ### Coffee and Coding
 
-Having a cup of coffee is something I enjoy every day, and I believe it is typical for an average graduate student and almost a life source.
-Coffee helps wake you up in the morning and can be used as a pill for concentration or to get some coffee while you are spending time with people during break hours or leisure.
-What about people who do coding?
-Many graduate students drink coffee while coding because coffee contains caffeine and keeps your brain from getting tiresome.
-Here, the coffee and code dataset from Kaggle has nine columns, including coding hours, coffee cups per day, coffee time, coding without coffee, coffee type, solving bugs, country, age range, and gender.
-<br />
+Having a cup of coffee is something I enjoy every day, and I believe it is typical for an average graduate student and almost a life source. Coffee helps wake you up in the morning and can be used as a pill for concentration or to get some coffee while you are spending time with people during break hours or leisure. What about people who do coding? Many graduate students drink coffee while coding because coffee contains caffeine and keeps your brain from getting tiresome. Here, the coffee and code dataset from Kaggle has nine columns, including coding hours, coffee cups per day, coffee time, coding without coffee, coffee type, solving bugs, country, age range, and gender. <br />
 
 ### Datasets
 
 I found the datasets from Kaggle, and it is the "caffeine content of drinks" and "Coffee and code dataset"
 
-1.  The caffeine content of Drinks (<https://www.kaggle.com/datasets/heitornunes/caffeine-content-of-drinks>)
+Coffee and code Dataset (<https://www.kaggle.com/datasets/shrutikunapuli/coffee-and-code-dataset>)
 
-    -   Drink: Drink's name
+-   Coding Hours
 
-    -   Volume(mL): Volume quantity
+-   Coffee cups per day
 
-    -   Calories
+-   Coffee Time
 
-    -   Caffeine (mg)
+-   Coding without coffee
 
-    -   Type
+-   Coffee Type
 
-2.  Coffee and code Dataset (<https://www.kaggle.com/datasets/shrutikunapuli/coffee-and-code-dataset>)
+-   Coffee solves Bugs
 
-    -   Coding Hours
+-   Gender
 
-    -   Coffee cups per day
+-   Country
 
-    -   Coffee Time
+-   Age range
 
-    -   Coding without coffee
-
-    -   Coffee Type
-
-    -   Coffee solves Bugs
-
-    -   Gender
-
-    -   Country
-
-    -   Age range
-
-![](caffein_image.jpg){width="278"}
-
-![](code.png){width="280"}
+![](will-code-for-coffee-programming-gift-qwerty-designs.jpeg){width="270"}
 
 ### Preliminary Figures
 
-To be continue... <br />
+Summary of columns except coffeetime, gender and country
+
+\*Coffeetime shows everyone drinks, Gender is not big affect of coding and there is only one country (Lebanon)
+
+![](preliminarydaya.png)
 
 ### Usage
 
@@ -83,8 +62,7 @@ Then connect to the machine on port 8787
 
 ### Makefile
 
-The Makefile included in this repository will build the major components of the project.
-For example, to build the report associated with this repository, in the Terminal of the Docker Rstudio instance enter:
+The Makefile included in this repository will build the major components of the project. For example, to build the report associated with this repository, in the Terminal of the Docker Rstudio instance enter:
 
 ```{r}
 make report.pdf

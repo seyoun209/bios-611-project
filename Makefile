@@ -1,7 +1,7 @@
 .PHONY: clean
 SHELL: /bin/bash
 
-#all:
+#all:sour
 
 #report.pdf: 
 
@@ -13,3 +13,6 @@ clean:
   derived_data/winning_data.csv
   mkdir -p figures
   Rscript winner_figures.R
+  
+shiny_app: source_data/baker_results.csv shinyapp.R
+	Rscript shinyapp.R ${PORT}
