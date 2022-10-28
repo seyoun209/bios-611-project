@@ -3,16 +3,21 @@ SHELL: /bin/bash
 
 #all:sour
 
-#report.pdf: 
+report.html:report.Rmd\
+	03.figure/preliminary_fig.png
+	Rscript -e "rmarkdown::render('report.Rmd', output_format = 'html_document')"
 
 clean:
-  rm -f plilimanary_figure.png
+	rm -rf 03.figure
+	rm report.log
+	rm report.tex
+	rm report.html
 
-03.figures/winner_number_starbakers.png: \
-  winner_figures.R\
-  derived_data/winning_data.csv
-  mkdir -p figures
-  Rscript winner_figures.R
+03.figure/preliminary_fig.png:01.source/coffeeandcode2018.csv
+	mkdir -p 03.figure
+	Rscript 02.code/project_skeleton_review.R
+
+
   
-shiny_app: source_data/baker_results.csv shinyapp.R
-	Rscript shinyapp.R ${PORT}
+#shiny_app: source_data/baker_results.csv shinyapp.R
+#	Rscript shinyapp.R ${PORT}

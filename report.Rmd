@@ -1,0 +1,29 @@
+---
+title: "Coffee and coding relationship"
+author: "Jess Byun"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Coffee and Coding
+
+Having a cup of coffee is something I enjoy every day, and I believe it is typical for an average graduate student and almost a life source. Coffee helps wake you up in the morning and can be used as a pill for concentration or to get some coffee while you are spending time with people during break hours or leisure. What about people who do coding? Many graduate students drink coffee while coding because coffee contains caffeine and keeps your brain from getting tiresome. Here, the coffee and code dataset from Kaggle has nine columns, including coding hours, coffee cups per day, coffee time, coding without coffee, coffee type, solving bugs, country, age range, and gender.
+
+Datasets
+========
+I found the datasets from Kaggle, and it is the "caffeine content of drinks" and "Coffee and code dataset"
+
+Coffee and code Dataset (<https://www.kaggle.com/datasets/shrutikunapuli/coffee-and-code-dataset>)
+
+Results
+========
+According to the summary of the data columns, which factors would be more relevent to study the coding and coffee relationship
+
+![](03.figure/preliminary_fig.png)
+
+to be continued..........
