@@ -54,7 +54,7 @@ To build the container:
 To run the Rstudio server in the container:
 
 ```{bash}
-docker run -v `pwd`:/home/rstudio -p 8787:8787 -e PASSWORD = mypass -t project-env
+docker run -v 'pwd':/home/rstudio -p 8787:8787 -e PASSWORD=pwd -t project-env
 
 ```
 
