@@ -54,7 +54,7 @@ To build the container:
 To run the Rstudio server in the container:
 
 ```{bash}
-docker run -v 'pwd':/home/rstudio -p 8787:8787 -e PASSWORD=pwd -t project-env
+docker run -v `pwd`:/home/rstudio -p 8787:8787 -e PASSWORD=pwd -t project-env
 
 ```
 
@@ -65,7 +65,7 @@ Then connect to the machine on port 8787
 The Makefile included in this repository will build the major components of the project. For example, to build the report associated with this repository, in the Terminal of the Docker Rstudio instance enter:
 
 ```{r}
-make report.pdf
+make report.html
 
 ```
 
@@ -81,7 +81,7 @@ make all
 To interactively look at the distribution of coffee vs coding in each category, use the R shiny App as follows:
 
 ```{bash}
-docker run -v 'pwd':/home/rstudio -p 8080:8080 -p 8787:8787 \
+docker run -v `pwd`:/home/rstudio -p 8080:8080 -p 8787:8787 \
   -e PASSWORD=mypassword -t project-env
 
 ```
