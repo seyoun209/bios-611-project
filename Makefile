@@ -25,7 +25,7 @@ clean:
 	rm -rf 03.figure
 	rm report.tex
 	rm report.html
-	rm 01.source/cleanup_data.csv
+	rm 02.code/cleanup_data.csv
 
 02.code/cleanup_data.csv:01.source/coffeeandcode2018.csv
 	mkdir -p 02.code
