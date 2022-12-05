@@ -34,9 +34,9 @@ Coffee and code Dataset (<https://www.kaggle.com/datasets/shrutikunapuli/coffee-
 
 ### Preliminary Figures
 
-Summary of columns except coffeetime, gender and country
+Summary of columns except coffee time, gender and country
 
-\*Coffeetime shows everyone drinks, Gender is not big affect of coding and there is only one country (Lebanon)
+\*Coffee time shows everyone drinks, Gender is not big affect of coding and there is only one country (Lebanon)
 
 ![](preliminarydaya.png)
 
@@ -82,7 +82,7 @@ To interactively look at the distribution of coffee vs coding in each category, 
 
 ```{bash}
 docker run -v `pwd`:/home/rstudio -p 8080:8080 -p 8787:8787 \
-  -e PASSWORD=mypassword -t project-env
+  -e PASSWORD=pwd -t project-env
 
 ```
 
