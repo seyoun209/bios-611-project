@@ -78,7 +78,7 @@ make all
 
 ### R Shiny App
 
-To interactively look at the distribution of coffee vs coding in each category, use the R shiny App as follows:
+To interactively (brush) look at the distribution of coffee vs coding and grouped by coffee solve bugs in each category, use the R shiny App as follows:
 
 ```{bash}
 docker run -v `pwd`:/home/rstudio -p 8080:8080 -p 8787:8787 \
