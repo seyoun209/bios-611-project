@@ -26,12 +26,12 @@ ggsave("03.figure/threecorr.png",plot=corr4)
 
 
 pc <- prcomp(hours_vs_coffee)
-dat=data.frame(pc$x[,1:2],Coffetime=new_cc$CoffeeTime)
+dat=data.frame(pc$x[,1:2],Coffetime=new_coffee$CoffeeTime)
 pc_plot <-ggplot(dat,aes(x=PC1,y=PC2,col=Coffetime))+geom_point()
 ggsave("03.figure/pca_coffeetime.png",pc_plot)
 
 pc <- prcomp(hours_vs_coffee)
-dat=data.frame(pc$x[,1:2],Gender=new_cc$Gender)
+dat=data.frame(pc$x[,1:2],Gender=new_coffee$Gender)
 pc_plot <-ggplot(dat,aes(x=PC1,y=PC2,col=Gender))+geom_point()
 ggsave("03.figure/pca_gender.png",pc_plot)
 
