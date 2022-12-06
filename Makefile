@@ -58,5 +58,5 @@ clean:
 	mkdir -p 03.figure
 	Rscript 02.code/results_plots.R
   
-shiny_app: source_data/baker_results.csv shinyapp.R
+shiny_app: 01.source/cleanup_data.csv shinyapp.R
 	Rscript shinyapp.R ${PORT}
