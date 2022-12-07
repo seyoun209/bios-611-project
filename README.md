@@ -30,7 +30,7 @@ Coffee and code Dataset (<https://www.kaggle.com/datasets/shrutikunapuli/coffee-
 
 -   Age range
 
-![](will-code-for-coffee-programming-gift-qwerty-designs.jpeg){width="270"}
+![](will-code-for-coffee-programming-gift-qwerty-designs.jpeg)
 
 ### Preliminary Figures
 
@@ -38,7 +38,7 @@ Summary of columns except coffee time, gender and country
 
 \*Coffee time shows everyone drinks, Gender is not big affect of coding and there is only one country (Lebanon)
 
-![](preliminarydaya.png)
+![](preliminary_fig.png)
 
 ### Usage
 
